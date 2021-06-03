@@ -4,7 +4,7 @@
 <head>
 
   <?php include 'inc/head.php'; ?>
-  <?php title("Awarno | Home"); ?>
+  <?php title("Awarno | Maintenance"); ?>
 
 </head>
 
