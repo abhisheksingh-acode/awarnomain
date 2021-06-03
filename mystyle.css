@@ -88,13 +88,14 @@
 .service-card-container .service-cards .card {
   min-width: 300px;
   width: 30%;
-  height: 450px;
+  min-height: 450px;
+  max-height: 500px;
   padding: 20px 20px;
   text-align: justify;
   border: none;
   margin: 20px 0;
   border-radius: 0 !important;
-  transition: all 0.3s ease;
+  transition: all 1s ease;
 }
 .service-card-container .service-cards .card .card-body {
   display: flex;
