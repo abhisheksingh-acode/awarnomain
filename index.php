@@ -519,7 +519,7 @@
     <!-- our services card container  -->
     <div class="container-fluid mx-auto p-0 service-card-container">
 
-      <div class=" service-cards gx-2 gy-2 ">
+      <div class=" service-cards ">
 
         <div class="card">
           <div class="card-body">

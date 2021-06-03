@@ -88,17 +88,19 @@
 .service-card-container .service-cards .card {
   min-width: 300px;
   width: 30%;
-  height: fit-content;
-  max-height: 400px;
-  padding: 20px 0;
+  min-height: 500px;
+  max-height: 500px;
+  padding: 20px 10px;
   text-align: justify;
   border: none;
   margin: 20px 0;
   border-radius: 0 !important;
   transition: all 0.3s ease;
+}
+.service-card-container .service-cards .card .card-body {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
 }
 .service-card-container .service-cards .card:hover {
@@ -119,12 +121,11 @@
   border: none;
 }
 .service-card-container .service-cards .card .card-title h2 {
-  font-size: 1.4rem;
-  font-weight: bolder;
   padding-left: 10px;
-  font-family: Arial, Helvetica, sans-serif;
 }
-
+.service-card-container .service-cards .card .card-text {
+  padding-top: 30px;
+}
 /* project titles */
 
 .project-title {
