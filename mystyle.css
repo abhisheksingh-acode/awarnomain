@@ -120,7 +120,9 @@
 }
 .service-card-container .service-cards .card .card-title h2 {
   font-size: 1.4rem;
+  font-weight: bolder;
   padding-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* project titles */
