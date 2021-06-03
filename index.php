@@ -513,11 +513,11 @@
   <!-- end content-block -->
 
   <!-- our services section rebuild  -->
-  <section class="text-center py-5 container-fluid mx-auto" id="our-service">
-    <h2>Our Services</h2>
+  <section class="text-center py-5 container-fluid p-0 mx-auto" id="our-service">
+    <h2 class="mb-3">Our Services</h2>
 
     <!-- our services card container  -->
-    <div class="container-fluid mx-auto p-0 service-card-container">
+    <div class="container-md container-fluid mx-auto p-0 service-card-container">
 
       <div class=" service-cards ">
 
@@ -525,7 +525,7 @@
           <div class="card-body">
             <div class="card-title">
               <img src="./images/awarno-favicon.png" alt="" class="service-card-png">
-              <h2>Web Development</h2>
+              <h3>Web Development</h3>
             </div>
             <div class="card-text">
               <p>We’ve mastered the top web technologies to deliver projects that have raked in investments. A trusted
@@ -538,7 +538,7 @@
           <div class="card-body">
             <div class="card-title">
               <img src="./images/awarno-favicon.png" alt="" class="service-card-png">
-              <h2>Web Development</h2>
+              <h3>Web Development</h3>
             </div>
             <div class="card-text">
               <p>We’ve mastered the top web technologies to deliver projects that have raked in investments. A trusted
@@ -551,7 +551,7 @@
           <div class="card-body">
             <div class="card-title">
               <img src="./images/awarno-favicon.png" alt="" class="service-card-png">
-              <h2>Web Development</h2>
+              <h3>Web Development</h3>
             </div>
             <div class="card-text">
               <p>We’ve mastered the top web technologies to deliver projects that have raked in investments. A trusted
@@ -564,7 +564,7 @@
           <div class="card-body">
             <div class="card-title">
               <img src="./images/awarno-favicon.png" alt="" class="service-card-png">
-              <h2>Web Development</h2>
+              <h3>Web Development</h3>
             </div>
             <div class="card-text">
               <p>We’ve mastered the top web technologies to deliver projects that have raked in investments. A trusted
@@ -577,7 +577,7 @@
           <div class="card-body">
             <div class="card-title">
               <img src="./images/awarno-favicon.png" alt="" class="service-card-png">
-              <h2>Web Development</h2>
+              <h3>Web Development</h3>
             </div>
             <div class="card-text">
               <p>We’ve mastered the top web technologies to deliver projects that have raked in investments. A trusted
@@ -590,7 +590,7 @@
           <div class="card-body">
             <div class="card-title">
               <img src="./images/awarno-favicon.png" alt="" class="service-card-png">
-              <h2>Web Development</h2>
+              <h3>Web Development</h3>
             </div>
             <div class="card-text">
               <p>We’ve mastered the top web technologies to deliver projects that have raked in investments. A trusted
@@ -603,7 +603,7 @@
           <div class="card-body">
             <div class="card-title">
               <img src="./images/awarno-favicon.png" alt="" class="service-card-png">
-              <h2>Web Development</h2>
+              <h3>Web Development</h3>
             </div>
             <div class="card-text">
               <p>We’ve mastered the top web technologies to deliver projects that have raked in investments. A trusted
@@ -616,7 +616,7 @@
           <div class="card-body">
             <div class="card-title">
               <img src="./images/awarno-favicon.png" alt="" class="service-card-png">
-              <h2>Web Development</h2>
+              <h3>Web Development</h3>
             </div>
             <div class="card-text">
               <p>We’ve mastered the top web technologies to deliver projects that have raked in investments. A trusted
@@ -629,7 +629,7 @@
           <div class="card-body">
             <div class="card-title">
               <img src="./images/awarno-favicon.png" alt="" class="service-card-png">
-              <h2>Web Development</h2>
+              <h3>Web Development</h3>
             </div>
             <div class="card-text">
               <p>We’ve mastered the top web technologies to deliver projects that have raked in investments. A trusted
