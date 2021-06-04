@@ -83,7 +83,7 @@
   align-items: center;
   background: none;
   padding: 0 10px;
-  margin: 10px 5px;
+  margin: 15px 5px;
   flex-wrap: wrap;
 }
 .service-card-container .service-cards .card {
@@ -491,8 +491,20 @@
   line-height: 50px;
 }
 /* faq styling */
+.accordion {
+}
+.accordion-header {
+  font-weight: bolder;
+}
+.accordion:not(odd) {
+  border-top: none !important;
+}
 .accordion-item {
   transition: all 0.8s ease;
+  border-radius: none !important;
+}
+.accordion-item:last-of-type {
+  border-radius: 0 !important;
 }
 .accordion-button {
   border: none;
@@ -512,6 +524,10 @@
   background-color: rgba(0, 0, 0, 0) !important;
   box-shadow: none;
 }
+.accordion-body {
+  border-top: 1px solid rgb(207, 197, 197);
+  font-weight: lighter;
+}
 .accordion-button::after {
   display: none;
 }
@@ -529,15 +545,7 @@
   vertical-align: middle;
 }
 .accordion-button:not(.collapsed)::before {
-  flex-shrink: 0;
-  width: 1.25rem;
-  height: 1.25rem;
-  margin-right: 10px !important;
-  content: "";
   background-image: url("./ico/accordion-alt.png");
-  background-repeat: no-repeat;
-  background-size: 1rem;
-  transition: transform 0.2s ease-in-out;
 }
 form {
   padding-left: 20px !important;

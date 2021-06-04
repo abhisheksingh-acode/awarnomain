@@ -514,7 +514,15 @@
 
   <!-- our services section rebuild  -->
   <section class="text-center py-5 px-3 px-lg-4 container-fluid mx-auto" id="our-service">
-    <h2>Our Services</h2>
+    <div class="row mb-4">
+      <div class="col-lg-12 text-center">
+        <div class="title-block2">
+          <img src="images/title-icon.png" lt="Image">
+          <h6>SOLUTIONS WE PROVIDE</h6>
+          <h2>Our Services</h2>
+        </div>
+      </div>
+    </div>
 
     <!-- our services card container  -->
     <div class="container-fluid mx-auto d-flex justify-content-around service-card-container row">
@@ -1373,7 +1381,7 @@
 
 
 
-  <section class="content-block mb-5">
+  <section class="content-block">
     <div class="title-block text-center wow fadeIn"> <img src="images/title-icon.png" alt="Image">
       <h6>HONEST REVIEWS</h6>
       <h2>Amazing Awarno Customers and<br> Users Testimonials</h2>
@@ -1476,7 +1484,7 @@
 
   <!-- end content-block -->
   <!-- faq section -->
-  <div class="my-4 container" style="height: 400px;">
+  <div class="mt-2 mb-4 container" style="height: 400px;">
     <div class="accordion" id="accordionExample">
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading1">
@@ -1487,7 +1495,7 @@
         </h2>
         <div id="collapse1" class="accordion-collapse collapse " aria-labelledby="heading1"
           data-bs-parent="#accordionExample">
-          <div class="accordion-body border-top">
+          <div class="accordion-body ">
             Hosting is basically a storage that you need to buy from server to put the website on internet and Yes we
             provide first year hosting free.
           </div>
@@ -1504,7 +1512,7 @@
         </h2>
         <div id="collapse2" class="accordion-collapse collapse " aria-labelledby="heading2"
           data-bs-parent="#accordionExample">
-          <div class="accordion-body">
+          <div class="accordion-body border-top fw-light">
             Hosting is basically a storage that you need to buy from server to put the website on internet and Yes we
             provide first year hosting free.
           </div>
@@ -1521,7 +1529,7 @@
         </h2>
         <div id="collapse3" class="accordion-collapse collapse " aria-labelledby="heading3"
           data-bs-parent="#accordionExample">
-          <div class="accordion-body">
+          <div class="accordion-body border-top fw-light">
             Hosting is basically a storage that you need to buy from server to put the website on internet and Yes we
             provide first year hosting free.
           </div>
@@ -1538,7 +1546,7 @@
         </h2>
         <div id="collapse4" class="accordion-collapse collapse " aria-labelledby="heading4"
           data-bs-parent="#accordionExample">
-          <div class="accordion-body">
+          <div class="accordion-body border-top fw-light">
             Hosting is basically a storage that you need to buy from server to put the website on internet and Yes we
             provide first year hosting free.
           </div>
@@ -1555,7 +1563,7 @@
         </h2>
         <div id="collapse5" class="accordion-collapse collapse " aria-labelledby="heading5"
           data-bs-parent="#accordionExample">
-          <div class="accordion-body">
+          <div class="accordion-body border-top fw-light">
             Hosting is basically a storage that you need to buy from server to put the website on internet and Yes we
             provide first year hosting free.
           </div>
@@ -1572,7 +1580,7 @@
         </h2>
         <div id="collapse6" class="accordion-collapse collapse " aria-labelledby="heading6"
           data-bs-parent="#accordionExample">
-          <div class="accordion-body">
+          <div class="accordion-body border-top fw-light">
             Hosting is basically a storage that you need to buy from server to put the website on internet and Yes we
             provide first year hosting free.
           </div>
