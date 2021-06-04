@@ -4,7 +4,7 @@
 <head>
 
   <?php include 'inc/head.php'; ?>
-  <?php title("Awarno | Maintenance"); ?>
+  <?php title("Awarno | Home"); ?>
 
 </head>
 
@@ -513,132 +513,137 @@
   <!-- end content-block -->
 
   <!-- our services section rebuild  -->
-  <section class="text-center py-5 container-fluid p-0 mx-auto" id="our-service">
-    <h2 class="mb-3">Our Services</h2>
+  <section class="text-center py-5 container-fluid mx-auto" id="our-service">
+    <h2>Our Services</h2>
 
     <!-- our services card container  -->
-    <div class="container-md container-fluid mx-auto p-0 service-card-container">
+    <div class="container-md-fluid container-lg container-fluid mx-auto d-flex justify-content-around service-card-container row ">
 
-      <div class=" service-cards ">
-
+      <div class="service-cards col-12 col-md-12 col-lg-4 mx-auto ">
         <div class="card">
           <div class="card-body">
             <div class="card-title">
               <img src="./images/awarno-favicon.png" alt="" class="service-card-png">
-              <h3>Web Development</h3>
+              <h3>Web <br> Development</h3> 
             </div>
             <div class="card-text">
-              <p>We’ve mastered the top web technologies to deliver projects that have raked in investments. A trusted
-                market leader in developing high performing web fronts for every business. Our Mobile Friendly websites
-                are suitable for every device.</p>
+                  <p>We’ve mastered the top web technologies to deliver projects that have raked in
+                  investments. A trusted market leader in developing high performing web fronts for every business. Our Mobile Friendly websites are suitable for every device.</p>
             </div>
           </div>
         </div>
+      </div>
+      <div class="service-cards col-12 col-md-12 col-lg-4 mx-auto ">
         <div class="card">
           <div class="card-body">
             <div class="card-title">
               <img src="./images/awarno-favicon.png" alt="" class="service-card-png">
-              <h3>Web Development</h3>
+              <h3>Web <br> Development</h3>
             </div>
             <div class="card-text">
-              <p>We’ve mastered the top web technologies to deliver projects that have raked in investments. A trusted
-                market leader in developing high performing web fronts for every business. Our Mobile Friendly websites
-                are suitable for every device.</p>
+                  <p>We’ve mastered the top web technologies to deliver projects that have raked in
+                  investments. A trusted market leader in developing high performing web fronts for every business. Our Mobile Friendly websites are suitable for every device.</p>
             </div>
           </div>
         </div>
+      </div>
+      <div class="service-cards col-12 col-md-12 col-lg-4 mx-auto ">
         <div class="card">
           <div class="card-body">
             <div class="card-title">
               <img src="./images/awarno-favicon.png" alt="" class="service-card-png">
-              <h3>Web Development</h3>
+              <h3>Web <br> Development</h3>
             </div>
             <div class="card-text">
-              <p>We’ve mastered the top web technologies to deliver projects that have raked in investments. A trusted
-                market leader in developing high performing web fronts for every business. Our Mobile Friendly websites
-                are suitable for every device.</p>
+                  <p>We’ve mastered the top web technologies to deliver projects that have raked in
+                  investments. A trusted market leader in developing high performing web fronts for every business. Our Mobile Friendly websites are suitable for every device.</p>
             </div>
           </div>
         </div>
+      </div>
+      <div class="service-cards col-12 col-md-12 col-lg-4 mx-auto ">
         <div class="card">
           <div class="card-body">
             <div class="card-title">
               <img src="./images/awarno-favicon.png" alt="" class="service-card-png">
-              <h3>Web Development</h3>
+              <h3>Web <br> Development</h3>
             </div>
             <div class="card-text">
-              <p>We’ve mastered the top web technologies to deliver projects that have raked in investments. A trusted
-                market leader in developing high performing web fronts for every business. Our Mobile Friendly websites
-                are suitable for every device.</p>
+                  <p>We’ve mastered the top web technologies to deliver projects that have raked in
+                  investments. A trusted market leader in developing high performing web fronts for every business. Our Mobile Friendly websites are suitable for every device.</p>
             </div>
           </div>
         </div>
+      </div>
+      <div class="service-cards col-12 col-md-12 col-lg-4 mx-auto ">
         <div class="card">
           <div class="card-body">
             <div class="card-title">
               <img src="./images/awarno-favicon.png" alt="" class="service-card-png">
-              <h3>Web Development</h3>
+              <h3>Web <br> Development</h3>
             </div>
             <div class="card-text">
-              <p>We’ve mastered the top web technologies to deliver projects that have raked in investments. A trusted
-                market leader in developing high performing web fronts for every business. Our Mobile Friendly websites
-                are suitable for every device.</p>
+                  <p>We’ve mastered the top web technologies to deliver projects that have raked in
+                  investments. A trusted market leader in developing high performing web fronts for every business. Our Mobile Friendly websites are suitable for every device.</p>
             </div>
           </div>
         </div>
+      </div>
+      <div class="service-cards col-12 col-md-12 col-lg-4 mx-auto ">
         <div class="card">
           <div class="card-body">
             <div class="card-title">
               <img src="./images/awarno-favicon.png" alt="" class="service-card-png">
-              <h3>Web Development</h3>
+              <h3>Web <br> Development</h3>
             </div>
             <div class="card-text">
-              <p>We’ve mastered the top web technologies to deliver projects that have raked in investments. A trusted
-                market leader in developing high performing web fronts for every business. Our Mobile Friendly websites
-                are suitable for every device.</p>
+                  <p>We’ve mastered the top web technologies to deliver projects that have raked in
+                  investments. A trusted market leader in developing high performing web fronts for every business. Our Mobile Friendly websites are suitable for every device.</p>
             </div>
           </div>
         </div>
+      </div>
+      <div class="service-cards col-12 col-md-12 col-lg-4 mx-auto ">
         <div class="card">
           <div class="card-body">
             <div class="card-title">
               <img src="./images/awarno-favicon.png" alt="" class="service-card-png">
-              <h3>Web Development</h3>
+              <h3>Web <br> Development</h3>
             </div>
             <div class="card-text">
-              <p>We’ve mastered the top web technologies to deliver projects that have raked in investments. A trusted
-                market leader in developing high performing web fronts for every business. Our Mobile Friendly websites
-                are suitable for every device.</p>
+                  <p>We’ve mastered the top web technologies to deliver projects that have raked in
+                  investments. A trusted market leader in developing high performing web fronts for every business. Our Mobile Friendly websites are suitable for every device.</p>
             </div>
           </div>
         </div>
+      </div>
+      <div class="service-cards col-12 col-md-12 col-lg-4 mx-auto ">
         <div class="card">
           <div class="card-body">
             <div class="card-title">
               <img src="./images/awarno-favicon.png" alt="" class="service-card-png">
-              <h3>Web Development</h3>
+              <h3>Web <br> Development</h3>
             </div>
             <div class="card-text">
-              <p>We’ve mastered the top web technologies to deliver projects that have raked in investments. A trusted
-                market leader in developing high performing web fronts for every business. Our Mobile Friendly websites
-                are suitable for every device.</p>
+                  <p>We’ve mastered the top web technologies to deliver projects that have raked in
+                  investments. A trusted market leader in developing high performing web fronts for every business. Our Mobile Friendly websites are suitable for every device.</p>
             </div>
           </div>
         </div>
+      </div>
+      <div class="service-cards col-12 col-md-12 col-lg-4 mx-auto ">
         <div class="card">
           <div class="card-body">
             <div class="card-title">
               <img src="./images/awarno-favicon.png" alt="" class="service-card-png">
-              <h3>Web Development</h3>
+              <h3>Web <br> Development</h3>
             </div>
             <div class="card-text">
-              <p>We’ve mastered the top web technologies to deliver projects that have raked in investments. A trusted
-                market leader in developing high performing web fronts for every business. Our Mobile Friendly websites
-                are suitable for every device.</p>
+                  <p>We’ve mastered the top web technologies to deliver projects that have raked in
+                  investments. A trusted market leader in developing high performing web fronts for every business. Our Mobile Friendly websites are suitable for every device.</p>
             </div>
           </div>
         </div>
-
       </div>
 
     </div>

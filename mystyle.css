@@ -82,33 +82,24 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 0 auto;
+  margin: 20px auto;
   flex-wrap: wrap;
 }
 .service-card-container .service-cards .card {
-  min-width: 300px;
-  max-width: 350px;
-  height: 420px;
-  padding: 20px 20px 10px;
+  width: auto;
+  height: 480px;
+  padding: 20px 20px 40px;
   text-align: justify;
   border: none;
-  margin: 10px 15px 20px;
   border-radius: 0 !important;
   transition: all 1s ease;
 }
-.service-card-container .service-cards .card .card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
+
 .service-card-container .service-cards .card:hover {
   box-shadow: 0 12px 50px -13px rgba(0, 0, 0, 0.192);
 }
 .service-card-container .service-cards .card .card-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 0;
 }
 .service-card-container .service-cards .card .card-title img {
   display: block;
@@ -116,15 +107,16 @@
   height: 60px;
   border-radius: 32% 68% 54% 46% / 53% 59% 41% 47%;
   background: #0e54ea;
-  outline: none;
-  border: none;
+  margin-bottom: 30px;
 }
 .service-card-container .service-cards .card .card-title h3 {
-  padding-left: 10px;
-  font-size: 1.75rem;
+  letter-spacing: 1px;
 }
-.service-card-container .service-cards .card .card-text {
-  padding-top: 20px;
+.service-card-container .service-cards .card .card-text p {
+  line-height: 24px;
+  font-size: 16px;
+  text-align: left;
+  margin: 30px 0;
 }
 /* project titles */
 
@@ -817,7 +809,13 @@ form {
     bottom: -50px;
     right: 60px;
   }
-
+  .service-card-container .service-cards {
+    margin: 10px 0;
+  }
+  .service-card-container .service-cards .card {
+    height: fit-content !important;
+    padding: 30px 0 20px;
+  }
   .navbar .logo a img {
     height: 60px;
   }
@@ -1115,7 +1113,10 @@ form {
   .bottom-swiper {
     top: 43%;
   }
-
+  .service-card-container .service-cards .card {
+    height: fit-content !important;
+    padding: 40px;
+  }
   .header > .container {
     margin-top: 120px;
   }
