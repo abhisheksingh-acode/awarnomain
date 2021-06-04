@@ -1291,12 +1291,12 @@
 
   <!-- end content-block -->
   <!-- faq section -->
-  <!-- changes index numbers (1,2,3,4,5....) for more items  -->
   <div class="mt-2 py-3 mb-4 container" style="height: fit-content;">
     <div class="mx-auto text-center">
-      <h2>FAQs</h2>
+      <h2 class="mb-4">FAQs</h2>
     </div>
     <div class="accordion" id="accordionExample">
+      <!-- change ids index in series to add more items (collapseOne, collapseTwo ...)  -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading1">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
