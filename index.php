@@ -1487,7 +1487,7 @@
         </h2>
         <div id="collapse1" class="accordion-collapse collapse " aria-labelledby="heading1"
           data-bs-parent="#accordionExample">
-          <div class="accordion-body">
+          <div class="accordion-body border-top">
             Hosting is basically a storage that you need to buy from server to put the website on internet and Yes we
             provide first year hosting free.
           </div>
