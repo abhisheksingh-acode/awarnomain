@@ -57,10 +57,11 @@
   <!-- CSS FILES -->
 
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="css/fontawesome.min.css">
   <link rel="stylesheet" href="css/odometer.min.css">
   <link rel="stylesheet" href="css/fancybox.min.css">
   <link rel="stylesheet" href="css/swiper.min.css">
   <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="mystyle.css?v=<?php echo time(); ?>">
+  <link rel="stylesheet" href="mystyle.css">

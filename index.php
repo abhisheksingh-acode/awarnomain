@@ -524,11 +524,13 @@
           <div class="card-body">
             <div class="card-title">
               <img src="./images/awarno-favicon.png" alt="" class="service-card-png">
-              
-            </div><h3>Web <br> Development</h3> 
+
+            </div>
+            <h3>Web <br> Development</h3>
             <div class="card-text">
-                  <p>We’ve mastered the top web technologies to deliver projects that have raked in
-                  investments. A trusted market leader in developing high performing web fronts for every business. Our Mobile Friendly websites are suitable for every device.</p>
+              <p>We’ve mastered the top web technologies to deliver projects that have raked in
+                investments. A trusted market leader in developing high performing web fronts for every business. Our
+                Mobile Friendly websites are suitable for every device.</p>
             </div>
           </div>
         </div>
@@ -541,8 +543,9 @@
               <h3>Web <br> Development</h3>
             </div>
             <div class="card-text">
-                  <p>We’ve mastered the top web technologies to deliver projects that have raked in
-                  investments. A trusted market leader in developing high performing web fronts for every business. Our Mobile Friendly websites are suitable for every device.</p>
+              <p>We’ve mastered the top web technologies to deliver projects that have raked in
+                investments. A trusted market leader in developing high performing web fronts for every business. Our
+                Mobile Friendly websites are suitable for every device.</p>
             </div>
           </div>
         </div>
@@ -555,8 +558,9 @@
               <h3>Web <br> Development</h3>
             </div>
             <div class="card-text">
-                  <p>We’ve mastered the top web technologies to deliver projects that have raked in
-                  investments. A trusted market leader in developing high performing web fronts for every business. Our Mobile Friendly websites are suitable for every device.</p>
+              <p>We’ve mastered the top web technologies to deliver projects that have raked in
+                investments. A trusted market leader in developing high performing web fronts for every business. Our
+                Mobile Friendly websites are suitable for every device.</p>
             </div>
           </div>
         </div>
@@ -569,8 +573,9 @@
               <h3>Web <br> Development</h3>
             </div>
             <div class="card-text">
-                  <p>We’ve mastered the top web technologies to deliver projects that have raked in
-                  investments. A trusted market leader in developing high performing web fronts for every business. Our Mobile Friendly websites are suitable for every device.</p>
+              <p>We’ve mastered the top web technologies to deliver projects that have raked in
+                investments. A trusted market leader in developing high performing web fronts for every business. Our
+                Mobile Friendly websites are suitable for every device.</p>
             </div>
           </div>
         </div>
@@ -583,8 +588,9 @@
               <h3>Web <br> Development</h3>
             </div>
             <div class="card-text">
-                  <p>We’ve mastered the top web technologies to deliver projects that have raked in
-                  investments. A trusted market leader in developing high performing web fronts for every business. Our Mobile Friendly websites are suitable for every device.</p>
+              <p>We’ve mastered the top web technologies to deliver projects that have raked in
+                investments. A trusted market leader in developing high performing web fronts for every business. Our
+                Mobile Friendly websites are suitable for every device.</p>
             </div>
           </div>
         </div>
@@ -597,8 +603,9 @@
               <h3>Web <br> Development</h3>
             </div>
             <div class="card-text">
-                  <p>We’ve mastered the top web technologies to deliver projects that have raked in
-                  investments. A trusted market leader in developing high performing web fronts for every business. Our Mobile Friendly websites are suitable for every device.</p>
+              <p>We’ve mastered the top web technologies to deliver projects that have raked in
+                investments. A trusted market leader in developing high performing web fronts for every business. Our
+                Mobile Friendly websites are suitable for every device.</p>
             </div>
           </div>
         </div>
@@ -611,8 +618,9 @@
               <h3>Web <br> Development</h3>
             </div>
             <div class="card-text">
-                  <p>We’ve mastered the top web technologies to deliver projects that have raked in
-                  investments. A trusted market leader in developing high performing web fronts for every business. Our Mobile Friendly websites are suitable for every device.</p>
+              <p>We’ve mastered the top web technologies to deliver projects that have raked in
+                investments. A trusted market leader in developing high performing web fronts for every business. Our
+                Mobile Friendly websites are suitable for every device.</p>
             </div>
           </div>
         </div>
@@ -625,8 +633,9 @@
               <h3>Web <br> Development</h3>
             </div>
             <div class="card-text">
-                  <p>We’ve mastered the top web technologies to deliver projects that have raked in
-                  investments. A trusted market leader in developing high performing web fronts for every business. Our Mobile Friendly websites are suitable for every device.</p>
+              <p>We’ve mastered the top web technologies to deliver projects that have raked in
+                investments. A trusted market leader in developing high performing web fronts for every business. Our
+                Mobile Friendly websites are suitable for every device.</p>
             </div>
           </div>
         </div>
@@ -639,8 +648,9 @@
               <h3>Web <br> Development</h3>
             </div>
             <div class="card-text">
-                  <p>We’ve mastered the top web technologies to deliver projects that have raked in
-                  investments. A trusted market leader in developing high performing web fronts for every business. Our Mobile Friendly websites are suitable for every device.</p>
+              <p>We’ve mastered the top web technologies to deliver projects that have raked in
+                investments. A trusted market leader in developing high performing web fronts for every business. Our
+                Mobile Friendly websites are suitable for every device.</p>
             </div>
           </div>
         </div>
@@ -1361,7 +1371,9 @@
 
   <!------------------ End Content Section ------------->
 
-  <section class="content-block">
+
+
+  <section class="content-block mb-5">
     <div class="title-block text-center wow fadeIn"> <img src="images/title-icon.png" alt="Image">
       <h6>HONEST REVIEWS</h6>
       <h2>Amazing Awarno Customers and<br> Users Testimonials</h2>
@@ -1463,7 +1475,115 @@
   </section>
 
   <!-- end content-block -->
+  <!-- faq section -->
+  <div class="my-4 container" style="height: 400px;">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading1">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
+            aria-expanded="true" aria-controls="collapse1">
+            What is Hosting? Is Hosting Free?
+          </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse " aria-labelledby="heading1"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Hosting is basically a storage that you need to buy from server to put the website on internet and Yes we
+            provide first year hosting free.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2"
+            aria-expanded="true" aria-controls="collapse2">
+            What is Hosting? Is Hosting Free?
+          </button>
+        </h2>
+        <div id="collapse2" class="accordion-collapse collapse " aria-labelledby="heading2"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Hosting is basically a storage that you need to buy from server to put the website on internet and Yes we
+            provide first year hosting free.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3"
+            aria-expanded="true" aria-controls="collapse3">
+            What is Hosting? Is Hosting Free?
+          </button>
+        </h2>
+        <div id="collapse3" class="accordion-collapse collapse " aria-labelledby="heading3"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Hosting is basically a storage that you need to buy from server to put the website on internet and Yes we
+            provide first year hosting free.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4"
+            aria-expanded="true" aria-controls="collapse4">
+            What is Hosting? Is Hosting Free?
+          </button>
+        </h2>
+        <div id="collapse4" class="accordion-collapse collapse " aria-labelledby="heading4"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Hosting is basically a storage that you need to buy from server to put the website on internet and Yes we
+            provide first year hosting free.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading5">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5"
+            aria-expanded="true" aria-controls="collapse5">
+            What is Hosting? Is Hosting Free?
+          </button>
+        </h2>
+        <div id="collapse5" class="accordion-collapse collapse " aria-labelledby="heading5"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Hosting is basically a storage that you need to buy from server to put the website on internet and Yes we
+            provide first year hosting free.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading6">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6"
+            aria-expanded="true" aria-controls="collapse6">
+            What is Hosting? Is Hosting Free?
+          </button>
+        </h2>
+        <div id="collapse6" class="accordion-collapse collapse " aria-labelledby="heading6"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Hosting is basically a storage that you need to buy from server to put the website on internet and Yes we
+            provide first year hosting free.
+          </div>
+        </div>
+      </div>
+    </div>
 
+  </div>
+  <!-- end faq section  -->
+
+  <!-- end content-block -->
   <section class="content-block bg-pattern no-bottom-spacing imghide">
     <div class="container">
       <div class="row">
