@@ -80,15 +80,15 @@
 }
 .service-card-container .service-cards {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  margin: 20px auto;
+  background: none;
+  padding: 0 10px;
+  margin: 10px 5px;
   flex-wrap: wrap;
 }
 .service-card-container .service-cards .card {
-  width: auto;
-  height: 480px;
-  padding: 20px 20px 40px;
+  width: fit-content;
+  height: 450px;
   text-align: justify;
   border: none;
   border-radius: 0 !important;
@@ -97,6 +97,9 @@
 
 .service-card-container .service-cards .card:hover {
   box-shadow: 0 12px 50px -13px rgba(0, 0, 0, 0.192);
+}
+.service-card-container .service-cards .card .card-body {
+  padding: 30px 40px 0;
 }
 .service-card-container .service-cards .card .card-title {
   padding: 0;
@@ -107,7 +110,7 @@
   height: 60px;
   border-radius: 32% 68% 54% 46% / 53% 59% 41% 47%;
   background: #0e54ea;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 .service-card-container .service-cards .card .card-title h3 {
   letter-spacing: 1px;
@@ -116,7 +119,7 @@
   line-height: 24px;
   font-size: 16px;
   text-align: left;
-  margin: 30px 0;
+  margin: 25px 0 25px;
 }
 /* project titles */
 
@@ -810,11 +813,14 @@ form {
     right: 60px;
   }
   .service-card-container .service-cards {
-    margin: 10px 0;
+    margin: 10px;
+  }
+  .service-card-container .service-cards .card .card-body {
+    padding: 20px 40px 30px;
   }
   .service-card-container .service-cards .card {
     height: fit-content !important;
-    padding: 30px 0 20px;
+    padding: 10px 0 20px;
   }
   .navbar .logo a img {
     height: 60px;
@@ -1113,9 +1119,19 @@ form {
   .bottom-swiper {
     top: 43%;
   }
+  .service-card-container {
+    padding: 0;
+  }
+  .service-card-container .service-cards .card .card-body {
+    padding: 30px 40px 0;
+  }
+  .service-card-container .service-cards {
+    padding: 5px 0;
+  }
   .service-card-container .service-cards .card {
+    width: 100%;
     height: fit-content !important;
-    padding: 40px;
+    padding: 15px 10px;
   }
   .header > .container {
     margin-top: 120px;
