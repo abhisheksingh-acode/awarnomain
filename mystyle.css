@@ -492,6 +492,7 @@
 }
 /* faq styling */
 .accordion {
+  float: none !important;
 }
 .accordion-header {
   font-weight: bolder;
@@ -902,6 +903,7 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
   }
 
   .mb_cn > p,
@@ -915,6 +917,7 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
   }
 
   .tabHide {

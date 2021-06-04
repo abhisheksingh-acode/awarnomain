@@ -439,78 +439,11 @@
     </div>
 
     <!-- end container -->
-
   </section>
-
-  <!-- technology section hide temp  -->
-  <!-- end content-block -->
-  <section class="d-none">
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="techno-tit">Technologies We Rely On</h2>
-        </div>
-      </div>
-
-      <div class="row no-gutters">
-        <div class="col-12 wow fadeIn">
-          <div class="carousel-slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <figure> <img src="images/bt.png" alt="Image" class="img-fluid">
-                  <figcaption> <small> TECHNOLOGY</small>
-                    <h3><a href="#">Backend Development</a></h3>
-                  </figcaption>
-                </figure>
-              </div>
-
-
-              <div class="swiper-slide">
-                <figure> <img src="images/app1.png" alt="Image" class="img-fluid">
-                  <figcaption> <small>TECHNOLOGY</small>
-                    <h3><a href="#">App Development</a></h3>
-                  </figcaption>
-                </figure>
-              </div>
-
-
-              <div class="swiper-slide">
-                <figure> <img src="images/fd.png" alt="Image" class="img-fluid">
-                  <figcaption> <small>TECHNOLOGY</small>
-                    <h3><a href="#">Frontend Development</a></h3>
-                  </figcaption>
-                </figure>
-              </div>
-
-
-              <div class="swiper-slide">
-                <figure> <img src="images/uiux2.png" alt="Image">
-                  <figcaption> <small>TECHNOLOGY</small>
-                    <h3><a href="#">UI-UX Designer</a></h3>
-                  </figcaption>
-                </figure>
-              </div>
+  <!-- end content block  -->
 
 
 
-            </div>
-
-            <div class="swiper-button-prev top-swiper"><i class="fas fa-chevron-left"></i></div>
-            <div class="swiper-button-next bottom-swiper"><i class="fas fa-chevron-right"></i></div>
-          </div>
-        </div>
-
-        <!-- end col-12 -->
-
-      </div>
-
-      <!-- end row -->
-
-    </div>
-
-  </section>
-  <!-- end content-block -->
 
   <!-- our services section rebuild  -->
   <section class="text-center py-5 px-3 px-lg-4 container-fluid mx-auto" id="our-service">
@@ -878,132 +811,6 @@
     </div>
   </section> -->
 
-  <section class="phoneHide d-none">
-    <div class="container-fluid bg-core p-5">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <div class="title-block2">
-            <img src="images/title-icon.png" lt="Image">
-            <h6>SOLUTIONS WE PROVIDE</h6>
-            <h2>Our Core Services</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row mt-lg-5 mt-md-0 mt-5">
-        <div class="col-lg-4 bg-core">
-          <div class="core-services">
-            <div class="service-icon">
-              <img src="images/icon04.png" class="img-fluid" alt="">
-            </div>
-            <h3>Web <br> Development</h3>
-            <p>We’ve mastered the top web technologies to deliver projects that have raked in
-              investments. A trusted market leader in developing high performing web fronts for every business. Our
-              Mobile Friendly websites are suitable for every device.</p>
-
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="core-services">
-            <div class="service-icon">
-              <img src="images/mobile-development.png" class="img-fluid" alt="">
-            </div>
-            <h3>Mobile <br> Development</h3>
-            <p>Our talented experts promise to turn client’s ideas into living and running mobile apps, be it for
-              Android or IOS. We focus on an interactive user interface that needs to be coupled with flawless
-              functionality to make any app a success in the industry.</p>
-
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="core-services">
-            <div class="service-icon">
-              <img src="images/digital-marketing.png" class="img-fluid" alt="">
-            </div>
-            <h3>Digital <br>Marketing</h3>
-            <p>With our passionate and dedicated digital marketing geeks, we help businesses reach their full online
-              potential and keep them updated with the latest trends to create innovative solutions to drive desired
-              results. </p>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <section class="desktopHide d-none">
-    <div class="container-fluid bg-core py-5">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <div class="title-block"> <img src="images/title-icon.png" lt="Image">
-            <h6>SOLUTIONS WE PROVIDE</h6>
-            <h2>Our Core Services</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row mt-md-5 mt-0">
-        <div class="col-lg-3 bg-core">
-          <div class="core-services">
-            <div class="service-icon">
-              <img src="images/icon04.png" class="img-fluid" alt="">
-            </div>
-            <h3>Web <br> Development</h3>
-            <p>We’ve mastered the top web technologies to deliver projects that have raked in
-              investments. A trusted market leader in developing high performing web fronts for every business.</p>
-
-
-          </div>
-        </div>
-        <div class="col-lg-3 mt-3 mt-lg-0">
-          <div class="core-services">
-            <div class="service-icon">
-              <img src="images/mobile-development.png" class="img-fluid" alt="">
-            </div>
-            <h3>Mobile App <br> Development</h3>
-            <p>Our talented experts promise to turn client’s ideas into living and running mobile apps, be it for
-              Android or IOS. We focus on an interactive user interface that needs to be coupled with flawless
-              functionality to make any app a success in the industry.</p>
-
-
-          </div>
-        </div>
-        <div class="col-lg-3 mt-3 mt-lg-0">
-          <div class="core-services">
-            <div class="service-icon">
-              <img src="images/icon04.png" class="img-fluid" alt="">
-            </div>
-            <h3>Digital <br> Marketing</h3>
-            <p>With our passionate and dedicated digital marketing geeks, we help businesses reach their full online
-              potential and keep them update with the latest trends to create innovative solutions to drive desired
-              results.</p>
-
-
-          </div>
-        </div>
-
-        <div class="col-lg-3 mt-3 mt-lg-0">
-          <div class="core-services">
-            <div class="service-icon">
-              <img src="images/digital-marketing.png" class="img-fluid" alt="">
-            </div>
-            <h3>Social Media <br> Marketing</h3>
-            <p>Our social media advertising services have been tested and proven to accelerate growth with high-quality
-              content, daily activity, monitoring-engagement, and increased followers. It will help you stay top of mind
-              and speed up your sales cycle. We try our best to give our clients more results at the minimum cost
-              possible.</p>
-
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-    </div>
-    </div>
-  </section>
-
-
 
   <!-- <section class="content-block">
     <div class="container">
@@ -1227,7 +1034,7 @@
   <!-- CAse Studies Ending -->
 
 
-  <!-- technology section hide temp  -->
+  <!-- technology section   -->
   <!-- end content-block -->
   <section class="mt-4">
 
@@ -1484,7 +1291,11 @@
 
   <!-- end content-block -->
   <!-- faq section -->
-  <div class="mt-2 mb-4 container" style="height: 400px;">
+  <!-- changes index numbers (1,2,3,4,5....) for more items  -->
+  <div class="mt-2 py-3 mb-4 container" style="height: fit-content;">
+    <div class="mx-auto text-center">
+      <h2>FAQs</h2>
+    </div>
     <div class="accordion" id="accordionExample">
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading1">
@@ -1501,8 +1312,7 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="accordion" id="accordionExample">
+
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading2">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2"
@@ -1518,8 +1328,7 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="accordion" id="accordionExample">
+
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading3">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3"
@@ -1535,8 +1344,7 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="accordion" id="accordionExample">
+
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading4">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4"
@@ -1552,8 +1360,7 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="accordion" id="accordionExample">
+
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading5">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5"
@@ -1569,8 +1376,7 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="accordion" id="accordionExample">
+
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading6">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6"
@@ -1589,6 +1395,7 @@
     </div>
 
   </div>
+
   <!-- end faq section  -->
 
   <!-- end content-block -->
