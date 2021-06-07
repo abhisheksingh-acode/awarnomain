@@ -8,11 +8,39 @@ for (i = 0; i < acc.length; i++) {
     this.classList.toggle("active-drop-down");
 
     /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
   });
 }
+
+var pageSelect = document.querySelector("#pageSelect");
+
+pageSelect.addEventListener("change", (e) => {
+  let page = e.target.value;
+
+  let con;
+  switch (page) {
+    case "home":
+      con = 1;
+      break;
+    case "about":
+      con = 0;
+      break;
+    case "portfolio":
+      con = 0;
+      break;
+    case "contact":
+      con = 0;
+      break;
+    case "career":
+      con = 0;
+      break;
+
+    default:
+      con = 0;
+      break;
+  }
+  if (con == 1) {
+    document.querySelector("#homePageSectionData").style.display = "block";
+  } else {
+    document.querySelector("#homePageSectionData").style.display = "none";
+  }
+});

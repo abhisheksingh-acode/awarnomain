@@ -37,12 +37,16 @@ aside::-webkit-scrollbar, section::-webkit-scrollbar{
 .drop-down-menu:hover{
    background: rgba(73, 72, 72, 0.479) !important;
 }
+.active-drop-down ~ .panel{
+   display: block;
+}
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
   padding: 0;
   display: none;
   overflow: hidden;
+  background-color: rgba(65, 63, 63, 0.288) !important;
 }
 input:not([type="file"]){
    height: fit-content !important;

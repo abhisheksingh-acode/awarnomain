@@ -75,12 +75,12 @@
                   required>
             </div>
                <div class="mb-3">
-               <label for="exampleFormControlInput1" class="form-label">Refference<span class="star">*</span></label>
+               <label for="exampleFormControlInput1" class="form-label">Reference<span class="star">*</span></label>
                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Title for header"
                   required>
             </div>
             <div class="mb-3">
-               <label for="exampleFormControlTextarea1" class="form-label">Descrtiption<span
+               <label for="exampleFormControlTextarea1" class="form-label">Description<span
                      class="star">*</span></label>
                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" required></textarea>
             </div>

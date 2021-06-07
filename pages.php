@@ -37,14 +37,13 @@
 
    <main class=" w-100 h-100 d-flex mt-5 pt-3">
    <aside class="bg-dark h-100 text-left d-flex flex-column justify-content-start pt-0 fw-bolder"
-   id="blog-dashboard-left">
-   <nav class="bg-success"><a class="text-white btn">Dashboard</a></nav>
-   <nav class="bg-danger"><a href="template.php" class="text-white btn">Template</a></nav>    
-
-          <nav>
-            <nav class="text-white btn drop-down-menu bg-dark">Pages <i class="fas fa-sort-down ps-5"></i></nav>
+         id="blog-dashboard-left">
+         <nav class="bg-success"><a class="text-white btn">Dashboard</a></nav>
+         <nav>
+            <nav><a href="template.php" class="text-white btn">Template</a></nav>         
+            <nav class="text-white btn drop-down-menu active-drop-down bg-danger">Pages <i class="fas fa-sort-down ps-5"></i></nav>
             <div class="panel bg-dark ">
-            <nav><a href="pages.php" class="text-white btn">Manage Pages</a></nav>
+            <nav><a href="pages.php" class="text-danger btn">Manage Pages</a></nav>
          <nav><a href="add_pages.php" class="text-white btn ">Add Pages</a></nav>
          <nav><a href="manage_footer.php" class="text-white btn ">Manage Footer</a></nav>
             </div>
@@ -63,40 +62,18 @@
       <section class="w-75 mx-auto h-100 pb-5">
          <div class="container mx-auto">
             <div class="row align-items-center d-flex justify-content-between">
-               <h2 class="text-dark col-6 fw-lighter">Select Template</h2>
+               <h2 class="text-dark col-6 fw-lighter">Manage Pages</h2>
                <div class="col-6 text-right">
                   <button class="me-auto btn btn-info">Save</button>
                <button class="ms-atuo btn btn-success">Publish</button>
                </div>
-               
             </div>
-            
- <br><br>
- <select class="form-select" aria-label=" example">
-  <option selected>Select Templates</option>
-  <option value="awarno">Awarno</option>
-  <option value="awarno web">Two</option>
-  <option value="awarno mobile">Three</option>
-</select>
- <br><br>
- <select class="form-select" aria-label=" example">
-  <option selected>Select Country</option>  
-</select>
-
- <br><br>
- <select class="form-select" aria-label=" example">
-  <option selected>Select City</option>
-  <option value="awarno">Delhi</option>
-  <option value="awarno web">Punjab</option>
-  <option value="awarno mobile">Rajasthan</option>
-</select>
-            <br> <br>
-
-            <div class="mb-3">
-               <label for="exampleFormControlInput1" class="form-label">Site Title<span class="star">*</span></label>
-               <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=""
-                  required>
-            </div>
+            <table class="w-100 mt-4 mx-auto text-center">
+            <td>ID</td>
+            <td>TITLE</td>
+            <td>ACTIONS</td>
+            <td>DATE</td>
+            </table>
          </div>
       </section>
    </main>

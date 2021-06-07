@@ -38,28 +38,31 @@
    <main class=" w-100 h-100 d-flex mt-5 pt-3">
    <aside class="bg-dark h-100 text-left d-flex flex-column justify-content-start pt-0 fw-bolder"
          id="blog-dashboard-left">
-         <nav class="bg-danger"><a class="text-white btn">Dashboard</a></nav>
-         <nav><a href="template.php" class="text-white btn">Template</a></nav>
-         <nav><a href="menus.php" class="text-white btn">Menus</a></nav>
-         <nav><a href="clients.php" class="text-white btn ">Clients</a></nav>
-         <nav><a href="services.php" class="text-white btn ">Services</a></nav>
-         <nav><a href="about.php" class="text-white btn ">About</a></nav>
-         <nav><a href="support.php" class="text-white btn ">Support</a></nav>
-         <nav><a href="testimonial.php" class="text-white btn ">Testimonials</a></nav>
-         <nav><a href="faqs.php" class="text-white btn ">FAQs</a></nav>
+         <nav class="bg-success"><a class="text-white btn">Dashboard</a></nav>
          <nav>
-            <nav class="text-white btn drop-down-menu bg-danger">Blogs <i class="fas fa-sort-down ps-5"></i></nav>
+            <nav><a href="template.php" class="text-white btn">Template</a></nav>         
+            <nav class="text-white btn drop-down-menu bg-dark">Pages <i class="fas fa-sort-down ps-5"></i></nav>
+            <div class="panel bg-dark ">
+            <nav><a href="pages.php" class="text-white btn">Manage Pages</a></nav>
+         <nav><a href="add_pages.php" class="text-white btn ">Add Pages</a></nav>
+         <nav><a href="manage_footer.php" class="text-white btn ">Manage Footer</a></nav>
+            </div>
+         </nav>
+            <nav class="text-white btn drop-down-menu active-drop-down bg-danger">Blogs <i class="fas fa-sort-down ps-5"></i></nav>
             <div class="panel bg-dark">
             <nav><a href="blogs.php" class="text-danger btn">Manage Blog Posts</a></nav>
          <nav><a href="addpost.php" class="text-white btn ">Add Post</a></nav>
             </div>
+         </nav>
+         <nav>
+            <nav><a href="forms.php" class="text-white btn">Forms</a></nav>
          </nav>
       </aside>
 
       <section class="w-75 mx-auto h-100 pb-5">
          <div class="container mx-auto">
             <div class="row align-items-center d-flex justify-content-between">
-               <h2 class="text-dark col-6 fw-lighter">Menus</h2>
+               <h2 class="text-dark col-6 fw-lighter">Manage Posts</h2>
                <div class="col-6 text-right">
                   <button class="me-auto btn btn-info">Save</button>
                <button class="ms-atuo btn btn-success">Publish</button>
