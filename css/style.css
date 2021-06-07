@@ -183,6 +183,7 @@ a {
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
+  text-decoration: none;
 }
 a:hover {
   text-decoration: underline;
