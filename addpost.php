@@ -45,7 +45,6 @@
             <div class="panel bg-dark ">
                <nav><a href="pages.php" class="text-white btn">Manage Pages</a></nav>
                <nav><a href="add_pages.php" class="text-white btn ">Add Pages</a></nav>
-               <nav><a href="manage_footer.php" class="text-white btn ">Manage Footer</a></nav>
             </div>
          </nav>
          <nav class="text-white btn drop-down-menu active-drop-down bg-danger">Blogs <i
