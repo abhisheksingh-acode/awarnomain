@@ -130,12 +130,17 @@
             "Lakshadweep",
             "Puducherry");
 
-   foreach($states  as $sub){
+  if(isset($_GET['country'])){
+     if ($_GET['country'] == 'india') {
+         foreach($states  as $sub){
+ 
                ?>
                   <option value="<?php echo $sub ;?>">
                      <?php echo $sub ;?>
                   </option>
-                  <?php  }
+                  <?php  }        
+     }
+      }
 ?>
                </select>
             </div>
@@ -363,6 +368,43 @@
                      </div>
                   </div>
                   <!-- finish  -->
+                  <div class="container mx-auto mt-5 mb-3">
+                     <div class="row align-items-center d-flex justify-content-between">
+                        <h2 class="text-dark col-6 fw-lighter">Add FAQs</h2>
+                        <div class="col-6 text-right">
+                           <button class="me-auto btn btn-info">Save</button>
+                           <button class="ms-atuo btn btn-success">Publish</button>
+                        </div>
+                     </div>
+
+                     <div class="row mt-3">
+                        <div class="col-6">
+                           <!-- add service section  -->
+                           <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Question<span
+                                    class="star">*</span></label>
+                              <input type="text" class="form-control" id="exampleFormControlInput1"
+                                 placeholder="Title for header" required>
+                           </div>
+                           <div class="mb-3">
+                              <label for="exampleFormControlTextarea1" class="form-label">Answer<span
+                                    class="star">*</span></label>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"
+                                 required></textarea>
+                           </div>
+                        </div>
+                        <div class="col-6 border p-0">
+                           <!-- list of services  -->
+                           <table class="w-100 mx-auto text-center table-bordered table-striped">
+                              <tr>
+                                 <th>No</th>
+                                 <th>Question</th>
+                                 <th>Actions</th>
+                              </tr>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
                </div>
 
             </div>
