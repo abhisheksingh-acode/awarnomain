@@ -15,14 +15,13 @@ var pageSelect = document.querySelector("#pageSelect");
 
 pageSelect.addEventListener("change", (e) => {
   let page = e.target.value;
-
   let con;
   switch (page) {
-    case "home":
+    case "web":
       con = 1;
       break;
-    case "about":
-      con = 0;
+    case "mobile":
+      con = 2;
       break;
     case "portfolio":
       con = 0;

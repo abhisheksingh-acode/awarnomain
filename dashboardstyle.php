@@ -52,4 +52,7 @@ input:not([type="file"]){
    height: fit-content !important;
    padding: 5px 20px !important;
 }
+#homePageSectionData{
+display: none;
+}
 </style>

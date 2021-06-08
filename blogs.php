@@ -40,7 +40,6 @@
          id="blog-dashboard-left">
          <nav class="bg-success"><a class="text-white btn">Dashboard</a></nav>
          <nav>
-            <nav><a href="template.php" class="text-white btn">Template</a></nav>         
             <nav class="text-white btn drop-down-menu bg-dark">Pages <i class="fas fa-sort-down ps-5"></i></nav>
             <div class="panel bg-dark ">
             <nav><a href="pages.php" class="text-white btn">Manage Pages</a></nav>
