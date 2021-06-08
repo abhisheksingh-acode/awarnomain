@@ -5,6 +5,7 @@
    <?php include './inc/head.php';?>
    <?php title('awarno | dashboard'); ?>
    <?php include 'dashboardstyle.php'; ?>
+   <link rel="stylesheet" href="./texteditor/rte_theme_default.css">
 </head>
 
 <body style="width: 100vw; height: 100vh;">
@@ -296,6 +297,7 @@
                   <br>
                </div>
                <!-- about section ends  -->
+              
                <div class="container mx-auto">
                   <div class="row align-items-center d-flex justify-content-between">
                      <h2 class="text-dark col-6 fw-lighter">Support Section</h2>
@@ -322,6 +324,30 @@
                <!-- support section ends  -->
                <div class="container mx-auto">
                   <div class="row align-items-center d-flex justify-content-between">
+                     <h2 class="text-dark col-6 fw-lighter">Page Specific Section</h2>
+                     <div class="col-6 text-right">
+                        <button class="me-auto btn btn-info">Save</button>
+                        <button class="ms-atuo btn btn-success">Publish</button>
+                     </div>
+                  </div>
+                  <br><br>
+                  <div class="mb-3">
+                     <label for="exampleFormControlInput1" class="form-label">Heading<span class="star">*</span></label>
+                     <input type="text" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Title for header" required>
+                  </div>
+                  <div class="mb-3">
+                     <label for="exampleFormControlTextarea1" class="form-label">Descrtiption <span
+                           class="star">*</span></label>
+                     <textarea class="form-control" id="exampleFormControlTextarea2"  rows="4" required></textarea>
+                  </div>
+
+
+                  <br>
+               </div>
+               <!-- page specific section ends  -->
+               <div class="container mx-auto">
+                  <div class="row align-items-center d-flex justify-content-between">
                      <h2 class="text-dark col-6 fw-lighter">Add Testimonial</h2>
                      <div class="col-6 text-right">
                         <button class="me-auto btn btn-info">Save</button>
@@ -345,8 +371,9 @@
                               placeholder="Title for header" required>
                         </div>
                         <div class="mb-3">
-                           <label for="exampleFormControlTextarea1" class="form-label">Description<span
-                                 class="star">*</span></label>
+                           <label for="exampleFormControlTextarea1" class="form-label">
+                              Description<span class="star">*</span>
+                           </label>
                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" required></textarea>
                         </div>
                         <div class="mb-3">
@@ -412,9 +439,8 @@
 
       </section>
    </main>
-
-   <script src="admin.js">
-   </script>
+   <script src="./texteditor/rte.js"></script>
+   <script src="admin.js"></script>
 </body>
 
 </html>

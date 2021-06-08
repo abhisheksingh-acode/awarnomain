@@ -63,7 +63,7 @@
 <link rel="stylesheet" href="css/odometer.min.css">
 <link rel="stylesheet" href="css/fancybox.min.css">
 <link rel="stylesheet" href="css/swiper.min.css">
-<link rel="stylesheet" href="../texteditor/rte_theme_default.css">
+<link rel="stylesheet" href="./texteditor/rte_theme_default.css">
 <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="mystyle.css">

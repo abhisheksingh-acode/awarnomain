@@ -1,3 +1,7 @@
+var editor2cfg = {};
+editor2cfg.toolbar = "basic";
+var RTE = new RichTextEditor("#exampleFormControlTextarea2", editor2cfg);
+
 var acc = document.getElementsByClassName("drop-down-menu");
 var i;
 
