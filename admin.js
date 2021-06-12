@@ -1,6 +1,4 @@
-var editor2cfg = {};
-editor2cfg.toolbar = "basic";
-var RTE = new RichTextEditor("#exampleFormControlTextarea2", editor2cfg);
+// dropdown FAQs
 
 var acc = document.getElementsByClassName("drop-down-menu");
 var i;
@@ -15,6 +13,8 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+// toggle template fields
+
 var pageSelect = document.querySelector("#pageSelect");
 
 pageSelect.addEventListener("change", (e) => {
@@ -24,16 +24,10 @@ pageSelect.addEventListener("change", (e) => {
     case "web":
       con = 1;
       break;
-    case "mobile":
+    case "app":
       con = 2;
       break;
-    case "portfolio":
-      con = 0;
-      break;
-    case "contact":
-      con = 0;
-      break;
-    case "career":
+    case "digital marketing":
       con = 0;
       break;
 
@@ -42,8 +36,49 @@ pageSelect.addEventListener("change", (e) => {
       break;
   }
   if (con == 1) {
-    document.querySelector("#homePageSectionData").style.display = "block";
+    document.querySelector(".selectWeb").style.display = "block";
   } else {
-    document.querySelector("#homePageSectionData").style.display = "none";
+    document.querySelector(".selectWeb").style.display = "none";
   }
 });
+
+// ajax request for dependent india states
+
+document.querySelector("#selectState").addEventListener("change", (e) => {
+  let xml = new XMLHttpRequest();
+
+  xml.open("GET", "ajax.php?country=" + e.target.value, true);
+  xml.send();
+
+  xml.onreadystatechange = () => {
+    if (xml.readyState == 4 && xml.status == 200) {
+      document.querySelector("#stateList").innerHTML = xml.responseText;
+    }
+  };
+});
+
+// // ajax for delete query
+
+// document.querySelectorAll('a').forEach((e)=>{
+//   e.addEventListener('click',(v)=>{
+//     let ajax = new XMLHttpRequest();
+//     ajax.open('GET','ajax.php?',true);
+
+//     ajax.send();
+
+//   })
+// })
+
+// rich text editor
+
+// var editor2cfg = {};
+// editor2cfg.toolbar = "basic";
+// var RTE = new RichTextEditor("#postEditor2", editor2cfg);
+
+// prevent form to refresh page
+
+// document.querySelectorAll("form").forEach((e) => {
+//   e.addEventListener("submit", (v) => {
+//     // v.preventDefault();
+//   });
+// });

@@ -1,3 +1,14 @@
+<?php
+
+include 'server.php';
+
+if(isset($_GET['delete'])){
+   $id = $_GET['id'];
+   mysqli_query($conn,"delete from blog_post where id = {$id}") ;
+};
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -67,13 +78,42 @@
                </div>
             </div>
             <table class="w-100 mt-4 mx-auto text-center">
+            <thead>
             <td>ID</td>
             <td>IMAGES</td>
             <td>TOPIC</td>
-            <td>AUTHOR</td>
             <td>DATE</td>
             <td>STATUS</td>
             <td>ACTIONS</td>
+            </thead>
+            <tbody>
+            <?php
+     $sel_blogs = "select * from blog_post";
+     $fire = mysqli_query($conn,$sel_blogs);
+
+         while($fetch_blogs = mysqli_fetch_array($fire)){
+?>
+           <tr>
+           <td><?php echo $fetch_blogs['id']  ;?></td>
+           <td><img src="<?php echo $fetch_blogs['image'] ;?>" alt="" width="80px" height="80px"></td>
+           <td><?php echo $fetch_blogs['topic'];?></td>
+           <td><?php echo $fetch_blogs['date'];?></td>
+           <td><?php echo $fetch_blogs['status'];?></td>
+           <td>
+           
+           <a href="addpost.php?id=<?php echo $fetch_blogs['id']; ?>&edit=true"><i
+               class="fas bg-info rounded fa-edit text-white p-2" title="update"></i> </a>
+         <a href="blogs.php?id=<?php echo $fetch_blogs['id'];?>&delete=true"><i
+               class="fa fa-trash bg-danger p-2 rounded text-white" aria-hidden="true"
+               title="delete"></i></a>
+           </td>
+           </tr>
+  
+         <?php }
+            ?>
+            </tbody>
+
+
             </table>
          </div>
       </section>

@@ -490,6 +490,71 @@
   line-height: 50px;
 }
 
+/* hiring section  */
+
+.right-hire-content-section .col-lg-6 {
+  margin-bottom: 30px !important;
+}
+.hire-content-card h3 {
+  white-space: nowrap !important;
+  font-size: 1.4rem;
+}
+
+/* industries we served section */
+
+.card-insdutry .card-item {
+  padding: 10px;
+  position: relative !important;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  transition: all 0.8s ease;
+}
+.card-insdutry .card-item .card-bg {
+  position: absolute !important;
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  z-index: -2;
+}
+.card-insdutry .card-item::before {
+  content: url("");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background-color: rgba(5, 10, 34, 0.342);
+  z-index: -1;
+}
+
+.card-insdutry .card-item .card-title {
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  transition: all 0.6s ease;
+  text-transform: capitalize;
+}
+.card-insdutry .card-item .card-text {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  height: 0;
+  transition: all 0.8s ease;
+  overflow: hidden;
+  padding: 0;
+}
+.card-insdutry .card-item:hover .card-text {
+  height: 200px;
+}
+.card-insdutry .card-item:hover .card-title {
+  filter: opacity(0);
+  display: none;
+}
+.card-insdutry .card-item:hover {
+  background: #00000081;
+}
+/* section end  */
+
 /* faq styling */
 .accordion {
   float: none !important;
@@ -801,7 +866,9 @@ form {
   float: left;
   text-decoration: none !important;
 }
-
+.certification-grid img {
+  background-color: #490eea;
+}
 .bg-blue {
   background-color: #490eea !important;
 }

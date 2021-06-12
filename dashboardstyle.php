@@ -52,7 +52,10 @@ input:not([type="file"]){
    height: fit-content !important;
    padding: 5px 20px !important;
 }
-#homePageSectionData{
-display: none;
+.fa-edit,.fa-trash{
+   font-size:12px;
+}
+.selectWeb{
+ display: none;
 }
 </style>

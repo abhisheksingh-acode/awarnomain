@@ -68,7 +68,6 @@
             <select class="form-select w-25 mt-5" aria-label=" example" id="pageSelect">
             <option selected>Select Form</option>
             <option value="home">Career</option>
-            <option value="about">Feedback</option>
             <option value="contact">Contact</option>
             </select>
             <table class="w-100 mt-4 mx-auto text-center">

@@ -1,3 +1,65 @@
+<?php
+session_start();
+
+include 'server.php';
+ if(isset($_GET['edit'])){
+   $id = $_GET['id'];
+   $_SESSION['blog_id'] = $id ;
+
+   $editBlog = "select * from blog_post where id = {$id} ";
+   $fireIdRow = mysqli_query($conn,$editBlog);
+   $fetchIdRow = mysqli_fetch_array($fireIdRow);
+};
+
+if (isset($_POST['update'])) {
+
+   $topic = $_POST['blogName'] ;
+   $description = $_POST['shortDescription'] ;
+   $content = $_POST['content'] ;
+   $author = $_POST['author'] ;
+   $status = $_POST['status'] ; 
+   $image = $_FILES['blogImage'] ;
+   
+
+   $imgPath = 'uploads/'. $image['name'];
+
+  move_uploaded_file($image['tmp_name'],$imgPath);
+
+   $updateSQL = "update blog_post set
+   img = '$imgPath',
+   topic = '$topic',
+   description = '$description',
+   content = '$content',
+   author = '$author',
+   status = '$status',
+   where id = {$_SESSION['blog_id']}";
+
+   mysqli_query($conn,$updateSQL);
+};
+if (isset($_POST['save'])) {
+
+   $topic = $_POST['blogName'] ;
+   $description = $_POST['shortDescription'] ;
+   $content = $_POST['content'] ;
+   $author = $_POST['author'] ;
+   $status = $_POST['status'] ; 
+   $image = $_FILES['blogImage'] ;
+
+   $imgPath = 'uploads/'. $image['name'];
+
+   move_uploaded_file($image['tmp_name'],$imgPath);
+
+   $insertSQL = "insert into blog_post (image,topic,author,description,content,status) values ('$imgPath','$topic', '$author','$description','$content','$status') ";
+
+   mysqli_query($conn,$insertSQL);
+
+   header('location:addpost.php');
+};
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -64,40 +126,42 @@
             <div class="row align-items-center d-flex justify-content-between">
                <h2 class="text-dark col-6 fw-lighter">Add Post</h2>
                <div class="col-6 text-right">
-                  <button class="me-auto btn btn-info">Save</button>
-                  <button class="ms-atuo btn btn-success">Publish</button>
+                  <button class="me-auto btn btn-info" type="submit" form="blog" name="<?php echo (isset($_GET['edit']))?'update':'save';?>">Save</button>
                </div>
             </div>
-            <form class="container mx-auto p-0 d-flex justify-content-between" method="POST" action=""
+            <form class="container mx-auto p-0 d-flex justify-content-between" id="blog" method="POST" action="addpost.php"
                enctype="multipart/form-data">
                <div class="left-section-form w-50">
                   <div class="mb-3">
                      <label for="exampleInputEmail1" class="form-label fw-bold">Blog Name</label>
-                     <input type="text" placeholder="Blog Name" value="" name="blogName" class="form-control"
-                        id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                     <input type="text" placeholder="Blog Name" name="blogName" class="form-control"
+                        id="exampleInputEmail1" aria-describedby="emailHelp" required value="
+                        <?php echo (isset($_GET['edit']))? $fetchIdRow['topic']:''  ;?>">
                   </div>
                   <div class="mb-3 ">
                      <label for="exampleFormControlTextarea1" name="shortDescription"
                         class="form-label fw-bold">Description</label>
                      <textarea class="form-control" placeholder="Short Description:" id="exampleFormControlTextarea1"
-                        value="" name="shortDescription" rows="3">
+                   name="shortDescription" rows="3">
+                   <?php echo (isset($_GET['edit']))? $fetchIdRow['description']:''  ;?>
                   </textarea>
                   </div>
                   <div class="mb-3 ">
                      <label for="exampleFormControlTextarea1" class="form-label fw-bold">Content</label>
                      <textarea class="form-control" name="content" id="postEditor" rows="2">
+                     <?php echo (isset($_GET['edit']))? $fetchIdRow['content']:''  ;?>
                   </textarea>
                   </div>
                </div>
                <div class="right-section-form w-50 px-4">
                   <div class="mb-3">
                      <label for="exampleFormControlTextarea1" class="form-label fw-bold">Featured Image</label>
-                     <input type="file" class="form-control" name="uploadImage" id="fileinput1" value="" />
+                     <input type="file" class="form-control" name="blogImage" id="fileinput1" />
 
                   </div>
                   <div class="mb-3 ">
                      <label for="exampleFormControlTextarea1" class="form-label fw-bold">Status</label>
-                     <select name="status" class="form-select" id="" value="">
+                     <select name="status" class="form-select" id="" value="<?php echo (isset($_GET['edit']))? $fetchIdRow['status']:''  ;?>">
                         <option value="draft">draft</option>
                         <option value="publish">publish</option>
                      </select>

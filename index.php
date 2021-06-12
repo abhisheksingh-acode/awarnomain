@@ -1,3 +1,7 @@
+<?php
+
+include 'server.php'; 
+?>
 <!doctype html>
 <html lang="en">
 
@@ -7,8 +11,6 @@
   <?php title("Awarno | Home"); ?>
 
 </head>
-
-
 
 <body>
 
@@ -24,12 +26,30 @@
     <div class="container">
       <div class="row align-items-center">
 
-        <div class="col-lg-7 col-md-11 col-sm-4">
-          <p id="typed-static">Most trusted Digital Partner for your </p>
+
+        <!-- insert dynamic data into landing page  -->
+        <?php  
+    $select = "select * from web_template";
+    $sel_fire = mysqli_query($conn,$select);
+
+    $fetch = mysqli_fetch_array($sel_fire);
+
+?>
+
+        <div class="col-lg-7 col-md-11 col-sm-4 flex-column mt-4">
+          <p id="typed-static">
+            <?php echo $fetch['heading'] ;?>
+          </p>
           <div id="typed-strings">
-            <strong>Website Development</strong>
-            <strong>App Development</strong>
-            <strong>Digital Marketing</strong>
+            <strong>
+              <?php echo $fetch['typingtext1'] ;?>
+            </strong>
+            <strong>
+              <?php echo $fetch['typingtext2'] ;?>
+            </strong>
+            <strong>
+              <?php echo $fetch['typingtext3'] ;?>
+            </strong>
           </div>
 
           <span id="typed"></span>
@@ -42,7 +62,16 @@
 
           <a href="tel:+918595966321" class="callNowTop">Let's Discuss Your Project</a>
 
+          <div class="certification-grid d-flex justify-content-center pt-5" style="clear: left;">
+            <img src="<?php echo $fetch['cert1'] ; ?>" alt="" class="cert-img cert-img1 " width="100px" height="70px">
+            <img src="<?php echo $fetch['cert2'] ; ?>" alt="" class="cert-img cert-img2 mx-3" width="100px"
+              height="70px">
+            <img src="<?php echo $fetch['cert3'] ; ?>" alt="" class="cert-img cert-img3" width="100px" height="70px">
+            <img src="<?php echo $fetch['cert4'] ; ?>" alt="" class="cert-img cert-img4 mx-3" width="100px"
+              height="70px">
+          </div>
         </div>
+
 
         <div class="col-lg-4 col-md-1 col-sm-4 phoneHide tabHide">
           <form action="" method="post" class="headerForm tabHide">
@@ -101,9 +130,7 @@
                 // Create connection
                 $conn = mysqli_connect($servername, $username, $password, $dbname);
                 // Check connection
-                
-                
-                
+                                
 
                 date_default_timezone_set('Asia/Kolkata');
                 $currentTime = date( 'd-m-Y h:i:s A', time () );
@@ -131,12 +158,8 @@
               }else{
                 echo "<p style='color:#fff;'>Thank You! Message Sent Successfully</p>";
               }
-
-
             }
             
-            
-
             ?>
 
 
@@ -342,15 +365,24 @@
 
   <section class="content-block">
     <div class="container">
+      <!-- insert dynamic data into landing page  -->
+      <?php  
+    $selectCollab = "select * from collabration";
+    $collab_fire = mysqli_query($conn,$selectCollab);
+
+    $fetchCollab = mysqli_fetch_array($collab_fire);
+
+?>
       <div class="row align-items-center interactive">
         <div class="col-lg-6 wow fadeIn">
           <div class="text-content-block">
             <h6>COLLABRATION WITH US</h6>
-            <h2>How we stand out</h2>
-            <p>Awarno is a team of young and experienced developers who solely believes on the principle of 3Ds Design,
-              Develop &amp; Deliver robust website, mobile app and custom software solutions which ignite innovation
-              and deliver digital success. We believe that every project is an important milestone in our journey of
-              becoming India's best digital company.</p>
+            <h2>
+              <?php echo $fetchCollab['heading']; ?>
+            </h2>
+            <p>
+              <?php echo $fetchCollab['description']; ?>
+            </p>
 
 
             <div class="row">
@@ -399,9 +431,6 @@
                 </div>
               </div>
             </div>
-
-
-
 
             <a href="tel:+918595966321">GET QUOTED</a>
 
@@ -458,147 +487,38 @@
     </div>
 
     <!-- our services card container  -->
-    <div class="container-fluid mx-auto d-flex justify-content-around service-card-container row">
+    <div class="container-fluid mx-auto d-flex justify-content-start service-card-container row">
 
-      <div class="service-cards col-12 col-md-12 col-lg-4 mx-auto ">
-        <div class="card">
-          <div class="card-body">
-            <div class="card-title">
-              <img src="./images/awarno-favicon.png" alt="" class="service-card-png">
 
-            </div>
-            <h3>Web <br> Development</h3>
-            <div class="card-text">
-              <p>We’ve mastered the top web technologies to deliver projects that have raked in
-                investments. A trusted market leader in developing high performing web fronts for every business. Our
-                Mobile Friendly websites are suitable for every device.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="service-cards col-12 col-md-12 col-lg-4 mx-auto ">
+      <?php
+  $selectServices = "select * from services";
+  $service_fire = mysqli_query($conn,$selectServices);
+
+while($fetchServices = mysqli_fetch_array($service_fire)){
+ ?>
+
+      <div class="service-cards col-12 col-md-12 col-lg-4 mx-0 ">
         <div class="card">
           <div class="card-body">
             <div class="card-title">
-              <img src="./images/awarno-favicon.png" alt="" class="service-card-png">
-              <h3>Web <br> Development</h3>
+              <img src="<?php echo $fetchServices['image'] ;?>" alt="" class="service-card-png">
             </div>
+            <h3>
+              <?php echo $fetchServices['title'] ;?>
+            </h3>
             <div class="card-text">
-              <p>We’ve mastered the top web technologies to deliver projects that have raked in
-                investments. A trusted market leader in developing high performing web fronts for every business. Our
-                Mobile Friendly websites are suitable for every device.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="service-cards col-12 col-md-12 col-lg-4 mx-auto ">
-        <div class="card">
-          <div class="card-body">
-            <div class="card-title">
-              <img src="./images/awarno-favicon.png" alt="" class="service-card-png">
-              <h3>Web <br> Development</h3>
-            </div>
-            <div class="card-text">
-              <p>We’ve mastered the top web technologies to deliver projects that have raked in
-                investments. A trusted market leader in developing high performing web fronts for every business. Our
-                Mobile Friendly websites are suitable for every device.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="service-cards col-12 col-md-12 col-lg-4 mx-auto ">
-        <div class="card">
-          <div class="card-body">
-            <div class="card-title">
-              <img src="./images/awarno-favicon.png" alt="" class="service-card-png">
-              <h3>Web <br> Development</h3>
-            </div>
-            <div class="card-text">
-              <p>We’ve mastered the top web technologies to deliver projects that have raked in
-                investments. A trusted market leader in developing high performing web fronts for every business. Our
-                Mobile Friendly websites are suitable for every device.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="service-cards col-12 col-md-12 col-lg-4 mx-auto ">
-        <div class="card">
-          <div class="card-body">
-            <div class="card-title">
-              <img src="./images/awarno-favicon.png" alt="" class="service-card-png">
-              <h3>Web <br> Development</h3>
-            </div>
-            <div class="card-text">
-              <p>We’ve mastered the top web technologies to deliver projects that have raked in
-                investments. A trusted market leader in developing high performing web fronts for every business. Our
-                Mobile Friendly websites are suitable for every device.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="service-cards col-12 col-md-12 col-lg-4 mx-auto ">
-        <div class="card">
-          <div class="card-body">
-            <div class="card-title">
-              <img src="./images/awarno-favicon.png" alt="" class="service-card-png">
-              <h3>Web <br> Development</h3>
-            </div>
-            <div class="card-text">
-              <p>We’ve mastered the top web technologies to deliver projects that have raked in
-                investments. A trusted market leader in developing high performing web fronts for every business. Our
-                Mobile Friendly websites are suitable for every device.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="service-cards col-12 col-md-12 col-lg-4 mx-auto ">
-        <div class="card">
-          <div class="card-body">
-            <div class="card-title">
-              <img src="./images/awarno-favicon.png" alt="" class="service-card-png">
-              <h3>Web <br> Development</h3>
-            </div>
-            <div class="card-text">
-              <p>We’ve mastered the top web technologies to deliver projects that have raked in
-                investments. A trusted market leader in developing high performing web fronts for every business. Our
-                Mobile Friendly websites are suitable for every device.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="service-cards col-12 col-md-12 col-lg-4 mx-auto ">
-        <div class="card">
-          <div class="card-body">
-            <div class="card-title">
-              <img src="./images/awarno-favicon.png" alt="" class="service-card-png">
-              <h3>Web <br> Development</h3>
-            </div>
-            <div class="card-text">
-              <p>We’ve mastered the top web technologies to deliver projects that have raked in
-                investments. A trusted market leader in developing high performing web fronts for every business. Our
-                Mobile Friendly websites are suitable for every device.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="service-cards col-12 col-md-12 col-lg-4 mx-auto ">
-        <div class="card">
-          <div class="card-body">
-            <div class="card-title">
-              <img src="./images/awarno-favicon.png" alt="" class="service-card-png">
-              <h3>Web <br> Development</h3>
-            </div>
-            <div class="card-text">
-              <p>We’ve mastered the top web technologies to deliver projects that have raked in
-                investments. A trusted market leader in developing high performing web fronts for every business. Our
-                Mobile Friendly websites are suitable for every device.</p>
+              <p>
+                <?php echo $fetchServices['description'] ;?>
+              </p>
             </div>
           </div>
         </div>
       </div>
 
+      <?php
+;}?>
     </div>
-
+    </div>
   </section>
   <!-- end content block  -->
 
@@ -1185,9 +1105,117 @@
 
 
   <!------------------ End Content Section ------------->
+  <!-- page specific section  -->
+
+  <section class="container mx-auto mt-3 py-lg-5">
+  <?php  
+    $selectSpecific = "select * from page_specific";
+    $specific_fire = mysqli_query($conn,$selectSpecific);
+
+    $fetchSpecific = mysqli_fetch_array($specific_fire);
+
+?>
+    <div class="title-block text-center wow fadeIn my-0 pb-lg-2"> <img src="images/title-icon.png" alt="Image">
+      <h6>HONEST REVIEWS</h6>
+      <h2><?php #echo fetchSpecific['heading'] ;?></h2>
+    </div>
+    <!-- end title-block -->
+    <div class=" wow fadeIn">
+
+      <div class="page-specific-content mx-auto w-75">
+        <blockquote class="fw-light">
+          <?php #echo fetchSpecific['description']  ;?>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- section ends  -->
+
+  <!-- hire section awarno  -->
+
+  <section class="container mx-auto p-0 mb-5">
+  
+
+    <h2 class="text-center mt-5 mb-4">Why Hire Software Developers In India?</h2>
+    <br>
+    <p class="text-center fw-light fs-5 mb-5 pb-3 d-block">
+    Are you looking to hire Indian software programmers? We deliver robust software solutions in a timely manner and offer a number of benefits to start-ups, enterprises, and entrepreneurs.
+    </p>
+
+    <!-- grid of cards  -->
+
+    <div class="row p-0 gx-4">
+
+      <!-- left poster div  -->
+      <div class="col-lg-4 ">
+        <div class="side-poster">
+          <img src="./images/p2.jpg" alt="">
+        </div>
+      </div>
+
+      <!-- right content cards div  -->
+      <div class="col-lg-8 row gx-3 right-hire-content-section ">
+    <?php  
+    $selectHire = "select * from hiring_grid";
+    $hire_fire = mysqli_query($conn,$selectHire);
+
+   while ($fetchHire = mysqli_fetch_array($hire_fire)){
+     ?>
+        <div class="col-lg-6 mb-3">
+          <div class="hire-content-card border p-3 ">
+            <h3 class="text-nowrap"><?php  echo $fetchHire['title'] ;?></h3> <br>
+            <p class="fw-light">
+            <?php echo $fetchHire['description'] ;?>
+            </p>
+          </div>
+        </div>
+   <?php ;}
+   ?>
+       
+      </div>
+    </div>
+
+  </section>
+  <!-- section ends  -->
+
+
+  <!-- industries we served section -->
+  <section class="container mx-auto mt-5">
+    <h2 class="text-center mb-4">Industries We Served</h2>
+    <br>
+
+    <!-- industry card grid div  -->
+    <div class="row mx-auto gx-3 gy-4">
+    <?php  
+    $selectIndustry = "select * from industry_served";
+    $industry_fire = mysqli_query($conn,$selectIndustry);
+
+   while ($fetchIndustry = mysqli_fetch_array($industry_fire)){
+     ?>
+       <div class="col-lg-3 card-insdutry">
+        <div class="card-item border text-center">
+          <img src="<?php echo fetchIndustry['image']  ?>" alt="" class="card-bg">
+          <h4 class="card-title"><?php  echo fetchIndustry['title']  ;?></h4>
+          <p class="card-text">
+          <?php echo fetchIndustry['description'] ;?>
+          </p>
+        </div>
+      </div>
+   <?php ;}
+   ?>
+    </div>
+
+
+  </section>
 
 
 
+
+
+
+
+  <!-- section end  -->
   <section class="content-block">
     <div class="title-block text-center wow fadeIn"> <img src="images/title-icon.png" alt="Image">
       <h6>HONEST REVIEWS</h6>
@@ -1197,19 +1225,25 @@
     <!-- end title-block -->
     <div class="testimonials-slider wow fadeIn">
       <div class="swiper-wrapper">
+
+      <?php  
+    $selectTestimonials = "select * from testimonials";
+    $fire_testimonials = mysqli_query($conn,$selectTestimonials);
+
+   while ($fetchTestimonials = mysqli_fetch_array($fire_testimonials)){
+     ?>
         <div class="swiper-slide">
 
           <div class="testimonial">
-            <blockquote>Putting together a website is a task, finding the right individual or company is even more
-              complex. I did my search around looking for this particular company that has the ability to create, design
-              and optimized my web site. Thank God I met Awarno, not only they have great taste in design but they can
-              guide you through the process and beyond
+            <blockquote>
+            <?php echo $fetchTestimonials['description']  ;?>
             </blockquote>
 
             <figure>
+            <img src="<?php echo $fetchTestimonials['image']  ;?>" alt="" class="rounded-circle border border-dark p-0" width="60px" height="20px">
               <figcaption>
-                <h6> Motimahal Group</h6>
-                <small>kuvam gujral</small>
+                <h6><?php echo $fetchTestimonials['refrence']  ;?></h6>
+                <small><?php echo $fetchTestimonials['author']  ;?></small>
               </figcaption>
             </figure>
 
@@ -1217,73 +1251,9 @@
           <!-- end testimonial-->
         </div>
         <!-- end swiper-slide -->
+  <?php ;}?>
 
-        <div class="swiper-slide">
-          <div class="testimonial">
-            <blockquote>Excellent, working with web designers of Awarno was great. Thanks to their knowledge and
-              determination our website looks great and functions really good. I recommend anyone that is looking for a
-              custom website to give them a call and speak to Awarno, They will guide you to the right direction.
-            </blockquote>
-
-            <figure>
-              <figcaption>
-                <h6> UjjawalSolar </h6>
-                <small>Devender</small>
-              </figcaption>
-            </figure>
-
-          </div>
-          <!-- end testimonial-->
-        </div>
-
-        <!-- end swiper-slide -->
-
-        <div class="swiper-slide">
-          <div class="testimonial">
-            <blockquote>Great design team and quick turn around on all projects and request. With their help we have
-              improved our google search results. My company Healthyments has depended on them for quite sometime now
-              and we have been doing business with them for over an year. Their web designing team is very knowledgeable
-              and they always let us know when a new Google update is coming up before anyone even knows. If you want a
-              reliable Web Design Company in Delhi I recommend them 100%
-            </blockquote>
-
-            <figure>
-              <figcaption>
-                <h6>Healthyments</h6>
-                <small>Ishan</small>
-              </figcaption>
-            </figure>
-
-          </div>
-          <!-- end testimonial-->
-        </div>
-
-        <!-- end swiper-slide -->
-
-        <div class="swiper-slide">
-          <div class="testimonial">
-            <blockquote>Honestly, very rarely I write a review with my opinion or experience but now I have the
-              intention to help people who want to be successful in the online business. After searching and dealing
-              with different designers and developers without success, I finally found Awarno web development and they
-              put color, flavor and efficiency to my project, we are working together for more than a year in various
-              designs such as logos, labels, web pages and we are currently optimizing our main website, implementing
-              new strategies to make more attractive our products to the market and increase conversion. If you need a
-              team working with you from A to Z, Awarno is the company. Thanks to all the team for the support.
-            </blockquote>
-
-            <figure>
-              <figcaption>
-                <h6>Taassur</h6>
-                <small>Priyam</small>
-              </figcaption>
-            </figure>
-
-          </div>
-          <!-- end testimonial-->
-        </div>
-
-        <!-- end swiper-slide -->
-      </div>
+       </div>
       <!-- end swiper-wrapper -->
     </div>
     <!-- end carousel-slider -->
@@ -1297,101 +1267,30 @@
     </div>
     <div class="accordion" id="accordionExample">
       <!-- change ids index in series to add more items (collapseOne, collapseTwo ...)  -->
+      <?php  
+    $selectFaqs = "select * from faqs";
+    $fire_faqs = mysqli_query($conn,$selectFaqs);
+
+   while ($fetchFaqs = mysqli_fetch_array($fire_faqs)){
+     ?>
+      
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading1">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
             aria-expanded="true" aria-controls="collapse1">
-            What is Hosting? Is Hosting Free?
+            <?php echo $fetchFaqs['question']   ;?>
           </button>
         </h2>
         <div id="collapse1" class="accordion-collapse collapse " aria-labelledby="heading1"
           data-bs-parent="#accordionExample">
           <div class="accordion-body ">
-            Hosting is basically a storage that you need to buy from server to put the website on internet and Yes we
-            provide first year hosting free.
+          <?php echo $fetchFaqs['answer']   ;?>
           </div>
         </div>
       </div>
 
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading2">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2"
-            aria-expanded="true" aria-controls="collapse2">
-            What is Hosting? Is Hosting Free?
-          </button>
-        </h2>
-        <div id="collapse2" class="accordion-collapse collapse " aria-labelledby="heading2"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body border-top fw-light">
-            Hosting is basically a storage that you need to buy from server to put the website on internet and Yes we
-            provide first year hosting free.
-          </div>
-        </div>
-      </div>
 
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading3">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3"
-            aria-expanded="true" aria-controls="collapse3">
-            What is Hosting? Is Hosting Free?
-          </button>
-        </h2>
-        <div id="collapse3" class="accordion-collapse collapse " aria-labelledby="heading3"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body border-top fw-light">
-            Hosting is basically a storage that you need to buy from server to put the website on internet and Yes we
-            provide first year hosting free.
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading4">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4"
-            aria-expanded="true" aria-controls="collapse4">
-            What is Hosting? Is Hosting Free?
-          </button>
-        </h2>
-        <div id="collapse4" class="accordion-collapse collapse " aria-labelledby="heading4"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body border-top fw-light">
-            Hosting is basically a storage that you need to buy from server to put the website on internet and Yes we
-            provide first year hosting free.
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading5">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5"
-            aria-expanded="true" aria-controls="collapse5">
-            What is Hosting? Is Hosting Free?
-          </button>
-        </h2>
-        <div id="collapse5" class="accordion-collapse collapse " aria-labelledby="heading5"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body border-top fw-light">
-            Hosting is basically a storage that you need to buy from server to put the website on internet and Yes we
-            provide first year hosting free.
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading6">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6"
-            aria-expanded="true" aria-controls="collapse6">
-            What is Hosting? Is Hosting Free?
-          </button>
-        </h2>
-        <div id="collapse6" class="accordion-collapse collapse " aria-labelledby="heading6"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body border-top fw-light">
-            Hosting is basically a storage that you need to buy from server to put the website on internet and Yes we
-            provide first year hosting free.
-          </div>
-        </div>
-      </div>
+  <?php ;} ?>
     </div>
 
   </div>
@@ -1756,16 +1655,6 @@
 
               $email = $_POST['semail'];
           
-              
-              
-              
-             
-
-                
-                
-                
-                
-                
   
               $to = "awarnodigital@gmail.com";
               $txt = "The new Subscribe for Members : ".$email;
@@ -1778,9 +1667,7 @@
                 echo "<p style='color:#fff;'>Message Not Sent</p>";
               }else{
                 echo "<p style='color:#fff;'>Thank You! Message Sent Successfully</p>";
-              }
-
-
+              };
             }
             
             
