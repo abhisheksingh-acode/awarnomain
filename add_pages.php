@@ -508,7 +508,7 @@ $fetchCollab = mysqli_fetch_array($collabFire);
                      <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Descrtiption
                         </label>
-                        <textarea class="form-control postEditor" name="specificPageDescription"
+                        <textarea class="form-control" name="specificPageDescription"
                            id="exampleFormControlTextarea1"
                            rows="4"><?php echo $fetchSpecific['description'] ;?></textarea>
                      </div>

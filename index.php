@@ -55,9 +55,7 @@ include 'server.php';
           <span id="typed"></span>
 
           <p class="typed-bottom">
-            Awarno is an ambitious web designing company which makes industry level website from cutting edge
-            technologies. Our websites will help you in establishing your business online and drive sales exponentially
-            with the coordination from our digital marketing team.
+          <?php echo $fetch['description'] ;?>
           </p>
 
           <a href="tel:+918595966321" class="callNowTop">Let's Discuss Your Project</a>
@@ -496,7 +494,6 @@ include 'server.php';
 
 while($fetchServices = mysqli_fetch_array($service_fire)){
  ?>
-
       <div class="service-cards col-12 col-md-12 col-lg-4 mx-0 ">
         <div class="card">
           <div class="card-body">
@@ -1117,14 +1114,14 @@ while($fetchServices = mysqli_fetch_array($service_fire)){
 ?>
     <div class="title-block text-center wow fadeIn my-0 pb-lg-2"> <img src="images/title-icon.png" alt="Image">
       <h6>HONEST REVIEWS</h6>
-      <h2><?php #echo fetchSpecific['heading'] ;?></h2>
+      <h2><?php echo $fetchSpecific['heading'] ;?></h2>
     </div>
     <!-- end title-block -->
     <div class=" wow fadeIn">
 
       <div class="page-specific-content mx-auto w-75">
         <blockquote class="fw-light">
-          <?php #echo fetchSpecific['description']  ;?>
+          <?php echo $fetchSpecific['description']  ;?>
         </blockquote>
       </div>
     </div>
@@ -1195,7 +1192,7 @@ while($fetchServices = mysqli_fetch_array($service_fire)){
      ?>
        <div class="col-lg-3 card-insdutry">
         <div class="card-item border text-center">
-          <img src="<?php echo fetchIndustry['image']  ?>" alt="" class="card-bg">
+          <img src="<?php echo fetchIndustry['image']  ;?>" alt="" class="card-bg">
           <h4 class="card-title"><?php  echo fetchIndustry['title']  ;?></h4>
           <p class="card-text">
           <?php echo fetchIndustry['description'] ;?>
